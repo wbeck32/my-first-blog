@@ -1,0 +1,78 @@
+extends layout
+
+block content
+  h1 Enter your credit card information
+  form(name="login", action="/pay", method="get")
+    div
+      label(for="email") Email:
+      input(type="email", name="email")
+    div
+      label(for="cc") Credit Card Number:
+      input(type="text", name="cc")
+    div
+      label(for="expiration") Credit Card Expiration date:
+      input(type="text", name="expiration")
+    div
+      label(for="name") Name on card:
+      input(type="text", name="name")
+    div
+      label(for="verification") Verification Code:
+      input(type="text", name="verification")
+    div
+      label(for="city") City:
+      input(type="text", name="city")
+    div
+      label(for="state") State:
+      select(name="state")
+        option(value="AL") Alabama
+        option(value="AK") Alaska
+        option(value="AL") Alabama
+        option(value="AR") Arkansas
+        option(value="CA") California
+        option(value="CO") Colorado
+        option(value="CT") Connecticut
+        option(value="DE") Delaware
+        option(value="FL") Florida
+        option(value="GA") Georgia
+        option(value="HI") Hawaii
+        option(value="ID") Idaho
+        option(value="IL") Illinois
+        option(value="IN") Indiana
+        option(value="IA") Iowa
+        option(value="KS") Kansas
+        option(value="KY") Kentucky
+        option(value="LA") Louisiana
+        option(value="ME") Maine
+        option(value="MD") Maryland
+        option(value="MA") Massachusetts
+        option(value="MI") Michigan
+        option(value="MN") Minnesota
+        option(value="MS") Mississippi
+        option(value="MO") Missouri
+        option(value="MT") Montana
+        option(value="NE") Nebraska
+        option(value="NV") Nevada
+        option(value="NH") New
+        option(value="NJ") New
+        option(value="NM") New
+        option(value="NY") New
+        option(value="NC") North
+        option(value="ND") North
+        option(value="OH") Ohio
+        option(value="OK") Oklahoma
+        option(value="OR") Oregon
+        option(value="PA") Pennsylvania
+        option(value="RI") Rhode
+        option(value="SC") South
+        option(value="SD") South
+        option(value="TN") Tennessee
+        option(value="TX") Texas
+        option(value="UT") Utah
+        option(value="VT") Vermont
+        option(value="VA") Virginia
+        option(value="WA") Washington
+        option(value="WV") West
+        option(value="WI") Wisconsin
+        option(value="WY") Wyoming
+    div
+      input(type="submit", value="Submit")
