@@ -46,3 +46,4 @@ para.addEventListener('click', highlight);
 
 //Immediately-Invoked Function Expression
 //IFFE
+})();
