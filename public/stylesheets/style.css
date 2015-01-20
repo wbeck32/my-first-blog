@@ -3,6 +3,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+
 a {
   color: #00B7FF;
+}
+
+article,body h1 {
+	color:red;
+	font-size:16px;
+}
+
+article p {
+	color:blue;
 }
