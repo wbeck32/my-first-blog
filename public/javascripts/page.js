@@ -5,7 +5,7 @@ var myArticle = document.createElement('article');
 var artBody = document.createElement('p');
 var artTitle = document.createElement('h1');
 
-artTitle.addEventListener('click', logClick);
+//artTitle.addEventListener('click', logClick);
 
 myArticle.appendChild(artTitle);
 myArticle.appendChild(artBody);
@@ -17,14 +17,24 @@ myPage[0].appendChild(myArticle);
 
 
 })();
+
+/*
 var myEmail = document.getElementById('email');
 myEmail.addEventListener('blur', valEmail);
 
 function valEmail(evt) {
-	console.log('checking email ',evt);
+	console.log('checking email ');
 	var em = myEmail.value;
-	console.log(em);
+	//if it's a valid email go on
+	//else display error message and don't go on
+	var emRegEx = new RegExp('.+');
+	if(emRegEx.test(em) === true) {
 
+	} else {
+		document.getElementById('emailVal').innerHTML = 'DANGER!';
+	}
+	console.log(emRegEx.test(em));
+	console.log(emRegEx);
 }
 
 
@@ -39,18 +49,21 @@ function valCC(evt) {
 var myExp = document.getElementById('exp');
 myExp.addEventListener('blur',valExp);
 
-function valExp() {
+function valExp(evt) {
 	var exp = myExp.value;
 	console.log('checking Expiration date: ',exp);
 }
 
 var myButt = document.getElementById('myButt');
+myButt.addEventListener('click', checkForm);
+
 function checkForm(evt) {
 	evt.preventDefault();
-	console.log('hello');
+	//finally check for empty fields
+	//use the forms array object to iterate through all fields
+	console.log('check the whole form here?');
 //	return;
 }
-myButt.addEventListener('click', checkForm);
 
 var el = document.getElementsByTagName('h1')[0];
 
@@ -77,6 +90,6 @@ if(tmp.style.backgroundColor === "red") {
 }
 
 para.addEventListener('click', highlight);
-
+*/
 //Immediately-Invoked Function Expression
 //IFFE
