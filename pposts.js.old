@@ -2,7 +2,7 @@
 var fs = require('fs');
 
 var find = function(post_name, cb) {
-    fs.readdir(__dirname + './posts/', function(err, files) {
+    fs.readdir(__dirname + '/posts/', function(err, files) {
         if (files.indexOf(post_name + '.html') !== -1) {
             fs.readFile('./posts/' + post_name + '.html', function(err, data) {
                 cb(data);

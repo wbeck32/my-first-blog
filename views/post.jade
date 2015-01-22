@@ -1,3 +1,8 @@
-article
-    != post
-    h1(id="hmmm")
+extends layout
+
+block content
+    h1= postTitle
+    .article
+        != post
+    div
+        a(class="link",href="http://localhost:3000/") Home

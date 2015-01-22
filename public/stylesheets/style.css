@@ -3,16 +3,23 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-
 a {
   color: #00B7FF;
 }
 
-article, body, h1 {
+body, h1 {
 	color:red;
 	font-size:16px;
 }
 
-article p {
+.article {
 	color:blue;
+	border:5px solid orange;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+.homeLink {
+	text-decoration: none;
+	font-size:100px;
 }
