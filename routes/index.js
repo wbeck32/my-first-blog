@@ -26,20 +26,4 @@ router.get('/post/:post_name', function(request, response) {
     response.render('post', {post: request.post, postTitle:request.title});
 });
 
-
-
-
-/* GET home page. 
-router.get('/', function(req, res) {
-  res.render('index', { title: 'My Freaking Fantastic Blog!' });
-});
-
-router.get('/pay', function(req, res) {
-  res.render('pay', {title: "Where's my money, honey?"});
-});
-
-router.get('/pcsjsi', function(req, res) {
-	res.render('pcsjsi', {title: "Portland Code School"});
-});
-*/
 module.exports = router;

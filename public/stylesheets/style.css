@@ -13,6 +13,11 @@ body, h1 {
 }
 
 .article {
+	color:maroon;
+}
+
+#posttitle {
+	font-size:24px;
 	color:blue;
 	border:5px solid orange;
 	padding: 20px;
